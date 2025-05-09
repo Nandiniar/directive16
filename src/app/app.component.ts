@@ -1,12 +1,13 @@
-import { NgIf } from '@angular/common';
+import { NgIf, NgSwitch } from '@angular/common';
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { NgforComponent } from "./ngfor/ngfor.component";
 import {NgifComponent} from "./ngif/ngif.component";
+import { NgswitchComponent } from './ngswitch/ngswitch.component';
 
 @Component({ // here @Component is a directive
   selector: 'app-root',
-  imports: [RouterOutlet, NgIf, NgforComponent,NgifComponent],
+  imports: [RouterOutlet, NgIf, NgforComponent,NgifComponent,NgswitchComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
@@ -17,7 +18,7 @@ export class AppComponent {
   // if-else conditoon
   // for loop
   // add style
-  // ngif,ngfor,ngstyle,ngswitc,ngclass
+  // ngif,ngfor,ngstyle,ngswitch,ngclass
   // three types of directives
   // 1 component directive - the most common type of directive , used in component template file
   // 2 structural directive- changes the structure of the dom by adding, removing or manipulating elements

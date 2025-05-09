@@ -1,9 +1,9 @@
-import { NgFor } from '@angular/common';
+import { NgFor, NgSwitch } from '@angular/common';
 import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-ngfor',
-  imports: [NgFor],
+  imports: [NgFor,NgSwitch],
   templateUrl: './ngfor.component.html',
   styleUrl: './ngfor.component.css'
 })
